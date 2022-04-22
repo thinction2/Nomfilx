@@ -26,9 +26,6 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 display: block;
 }
-body {
-line-height: 1;
-}
 ol, ul {
 list-style: none;
 }
@@ -49,7 +46,10 @@ box-sizing: border-box;
 }
 body {
 font-family: 'Source Sans Pro', sans-serif;
-color: black;
+color: ${(p) => p.theme.white.darker};
+line-height: 1;
+background-color: black;
+overflow-x:hidden
 }
 a {
 text-decoration: none;
